@@ -1,15 +1,12 @@
+#import libraries
 import pandas as pd
-
 import datetime
-
 import numpy as np
-
 import matplotlib.pyplot as plt
-
 from pandas.plotting import scatter_matrix
-
 import yfinance as yf
 
+#try some of the features
 start = "2014-01-01"
 end = '2019-1-01'
 tcs = yf.download('TCS',start,end)
