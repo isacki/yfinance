@@ -1,3 +1,14 @@
+#install packages if not already installed
+import subprocess
+import sys
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+install('pandas')
+install('datetime')
+install('numpy')
+install('matplotlib')
+install('yfinance')
+
 #import libraries
 import pandas as pd
 import datetime
